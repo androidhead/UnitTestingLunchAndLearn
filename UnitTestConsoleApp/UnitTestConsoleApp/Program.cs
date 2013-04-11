@@ -10,7 +10,7 @@ namespace UnitTestConsoleApp
     {
         static void Main(string[] args)
         {
-            string s = "hello this is a change";
+            string s = "hello this is a change.  one more change just to test git";
         }
     }
 }

@@ -1,14 +1,15 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Utility;
 
-namespace UnitTestProject1
+namespace Utility.Test
 {
     [TestClass]
     public class MathTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AddTwoNumbers_Basic_Success()
         {
+            Assert.AreEqual(4, new Math().AddTwoNumbers(3, 1));
         }
     }
 }

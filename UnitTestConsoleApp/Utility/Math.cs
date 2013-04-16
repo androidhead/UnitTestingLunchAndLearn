@@ -8,5 +8,9 @@ namespace Utility
 {
     public class Math
     {
+        public virtual int AddTwoNumbers(int firstNumber, int secondNumber)
+        {
+            return firstNumber + secondNumber;
+        }
     }
 }

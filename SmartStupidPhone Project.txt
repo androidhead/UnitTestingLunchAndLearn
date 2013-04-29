@@ -1,8 +1,12 @@
--work on transcript parser
+
+TODO
+//-finish DateParser tests
+-write date parser code, get tests to pass
 
 
 
-	
+DateParser
+-could demonstrate how to easily change formats that it can read	
 -create a dummy db layer (or something that can be mocked)	
 
 

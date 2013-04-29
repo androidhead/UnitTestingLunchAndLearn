@@ -1,9 +1,11 @@
 TEST SCENARIOS TO TRY AND DEMONSTRATE
+	-testing first
 	-simple test, assert (for those with very little unit testing familiarity)
 		MathTest.AddTwoNumbers_Basic_Success()
 		-follow up with "what's the point of this" - just duplicating code
 			-can test edge cases				
 		-method with a complex path (e.g. different paths that log different errors)				
+	-making a change, keeping each other "sturdy"
 	-refactoring, keeping same test to ensure refactor is good
 		-test may fail - that's ok, that's what its there for
 		-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
@@ -11,6 +13,8 @@ TEST SCENARIOS TO TRY AND DEMONSTRATE
 		-(must build db layer)
 	-code change (test AND code needs to change)		
 	-find a good pattern for a repetitive test that uses random values (e.g. test executes a n different times with different random inputs)
+	-if you find a bug that you didn't test for, just add the test when you find the bug
+	-a kind of self-documentation, and unit tests are usually easy to read.
 	-to test calculation-heavy methods: randomize input values so many scenarios get tested		
 		-maybe even [input random]/assert in a loop
 	-test edge cases	

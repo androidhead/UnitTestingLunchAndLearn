@@ -3,12 +3,11 @@ Title: Introduction to Unit Testing
 Description:  Discuss the purpose of unit testing, as well as some practical techniques and best practices.
 
 
-
-
 TODO
 -finish code
--blog post
 -finish slides
+-"blog post"
+
 
 
 
@@ -18,7 +17,7 @@ LINKS / REFERENCES
 ___________
 4/29 Plan
 
-6:35-7:10 work on coding
-7:10-7:30 look up articles on unit test evangelism
+//6:35-7:20 work on coding
+7:20-7:40 look up articles on unit test evangelism
 	-convincing people
-7:30-8:00 code some more
+7:40-8:00 code some more

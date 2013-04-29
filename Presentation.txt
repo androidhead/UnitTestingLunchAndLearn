@@ -32,8 +32,35 @@ PRESENTATION FLOW
 
 -Examples of how unit tests saved me time (intermixed with best practices)
 	-
+-show setting up a unit test project?
 
+____
+TECHNIQUES, EXAMPLES, BEST PRACTICES
+-Best practices (cite:http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/)
+	-a unit test should usually only test one thing
+	-Naming Conventions
+		-S/S/R (Subject/Scenario/ResultExpected)
+	-demonstrate ease of refactoring with unit tests	
+	-orthogonal (use different word choice) : shouldn't overlap in what functionality is tested
+		-this improves maintainability of your tests, among other things
 
+-Mocking & Dependency Injection
+	-Dependency Injection allows you to mock dependencies easily
+	-MockObject.Callbase = true (mocking only part of a class) -- good for mocking methods in the same class that you are testing!
+	-using "virtual" keyword to make methods overridable for mocking VS doing it the longer way (interfaces)
+	-good way to demonstrate dependency injection
+	-It.IsAny<>() and other such helpful "shortcuts"
+	-trick to allow subsequent calls to something return different results ("ReturnsInOrder")
+
+-Test Driven Development
+Te-write simple app to demonstrate TDD, focusing on the testing part.
+	-or maybe don't write any of the working code, just write the test.		
+	-the app does a bunch of complex string parsing
+		-break the app, see the unit tests break					
+-demonstrate than an un-unittestable design probably isn't a good one
+-debate:  should you test private methods?
+	-I say that you SHOULD in the right case, because a private method to one design may be a public method to another.
+		-bottom line, will it save you time later?  If so, you should test that private method.
 
 
 PRESENTATION

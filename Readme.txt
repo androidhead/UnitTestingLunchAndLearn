@@ -17,7 +17,7 @@ LINKS / REFERENCES
 
 ___________
 4/29 Plan
--6:35 clean up notes; vision
+
 6:35-7:10 work on coding
 7:10-7:30 look up articles on unit test evangelism
 	-convincing people

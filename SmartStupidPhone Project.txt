@@ -1,15 +1,10 @@
-
+-work on transcript parser
 
 
 
 	
--create a dummy db layer (or something that can be mocked)
--mock dummy db layer to test proper installation of moq
-	-SquareManager
-	-Square
-	-A DataContext class which will have SquareManager, other managers as a property
-	
--show setting up a unit test project?
+-create a dummy db layer (or something that can be mocked)	
+
 
 -set up slides
 	-get the official LA slide going, make sure you can publish the presentation

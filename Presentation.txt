@@ -1,0 +1,48 @@
+__________________
+PRESENTATION FLOW
+-What are unit tests?
+	*-a way to test the fundamental pieces of your code to make sure they are behaving as expected
+	-less about finding bugs, more about preventing them (cite: Seth)
+	
+-Why do unit tests?
+	-Saves time and money when done right
+		-though costs significant time at the beginning, good tests can save even more time in long run
+		-test every possible path (especially useful if there's multiple error paths, which could happen even in a simple method)
+		-helps test edge cases (which typically go untested until live)
+		-improves overall quality
+			-especially if you use Gated checkins
+		-helps design (easier to see how parts fit together if you know what each one does)				
+		-helps to maintain separation of concerns
+			-helps you think of your code as discrete, well-defined parts
+			-if something can't be unit tested, it probably should be refactored with better separation
+		-improves reliability of refactoring	
+			-essential for Agile where quick/reliable refactoring is necessary
+	-allows you solidify design in code before coding actual funcionality
+	-makes everyone more confident in their code
+	-foundational to TDD, which really saves time
+	-helps maintenance of product (write a test when you find a qa error.  then you can be certain that problem never happens again)
+	-push-pull relationship between unit tests and functionality - unit tests make sure code works, code makes sure unit tests work (they make each other "sturdy")	
+		(note: make sure there is a test to show this)
+		-in the process, this kind of self-documents code
+	-in my opinion, makes development more fun
+	
+
+-Set up unit testing project on-the-fly to show how easy it is in VS2012
+	-have project just be a bunch of stubs in a class library
+
+-Examples of how unit tests saved me time (intermixed with best practices)
+	-
+
+
+
+
+PRESENTATION
+use reveal.js for presentation?
+	http://www.rvl.io/ is a presentation editor
+
+REFERENCES
+Steven Sanderson's blog - Writing Great Unit Tests: Best and Worst Practices
+	http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
+
+ACKNOWLEDGEMENTS
+Seth, for helping me talk thru some of the issues

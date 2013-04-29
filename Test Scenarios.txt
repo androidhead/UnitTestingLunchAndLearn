@@ -1,0 +1,28 @@
+TEST SCENARIOS TO TRY AND DEMONSTRATE
+	-simple test, assert (for those with very little unit testing familiarity)
+		MathTest.AddTwoNumbers_Basic_Success()
+		-follow up with "what's the point of this" - just duplicating code
+			-can test edge cases				
+		-method with a complex path (e.g. different paths that log different errors)				
+	-refactoring, keeping same test to ensure refactor is good
+		-test may fail - that's ok, that's what its there for
+		-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
+	-testing your code without actual db present
+		-(must build db layer)
+	-code change (test AND code needs to change)		
+	-find a good pattern for a repetitive test that uses random values (e.g. test executes a n different times with different random inputs)
+	-to test calculation-heavy methods: randomize input values so many scenarios get tested		
+		-maybe even [input random]/assert in a loop
+	-test edge cases	
+	-testing a web/wcf service with nothing to call it (simulating all the external thigns calling it)
+	-catching run-time errors that you didn't know existed (maybe in an if clause that doesn't execute often)	
+	-different implementations of same public interface - show that any can be "plugged-in" in place of others, as long as they pass the tests
+		-show how this helps maintain clear separation
+	-mocking
+		-db dependency
+		-other dependency		
+		-partial mocking of a class (callbase, etc)
+		-callback (to see what happens in a called class)
+	?-show writing test BEFORE method				
+	-demonstrate good naming conventions and BAD naming conventions for unit test methods
+

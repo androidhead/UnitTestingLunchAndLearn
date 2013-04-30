@@ -4,7 +4,14 @@ Description:  Discuss the purpose of unit testing, as well as some practical tec
 
 
 TODO
--finish code
+-finish code, get it functional
+	-finish date parser tests, code
+	-get gmail reader working
+	-get gcalendar writer working
+	-get it working to interface with gmail (looping mechanism in console app, outside of gmail interfacer)
+	-make sure to commit in working state
+	-show how easy it is to reformat date format expected
+	-use what you have so far to test many of the scenarios you want to test
 -finish slides
 -"blog post"
 

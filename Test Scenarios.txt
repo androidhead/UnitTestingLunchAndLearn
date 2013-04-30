@@ -6,6 +6,7 @@ TEST SCENARIOS TO TRY AND DEMONSTRATE
 			-can test edge cases				
 		-method with a complex path (e.g. different paths that log different errors)				
 	-making a change, keeping each other "sturdy"
+		-show changing the way I want to parse dates!
 	-refactoring, keeping same test to ensure refactor is good
 		-test may fail - that's ok, that's what its there for
 		-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
@@ -17,6 +18,7 @@ TEST SCENARIOS TO TRY AND DEMONSTRATE
 	-a kind of self-documentation, and unit tests are usually easy to read.
 	-to test calculation-heavy methods: randomize input values so many scenarios get tested		
 		-maybe even [input random]/assert in a loop
+	-can test most everything without setting up data
 	-test edge cases	
 	-testing a web/wcf service with nothing to call it (simulating all the external thigns calling it)
 	-catching run-time errors that you didn't know existed (maybe in an if clause that doesn't execute often)	

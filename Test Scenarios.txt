@@ -12,6 +12,7 @@ TEST SCENARIOS TO TRY AND DEMONSTRATE
 		-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
 	-testing your code without actual db present
 		-(must build db layer)
+	-make a mistake in code on purpose, and show unit tests finding that.
 	-code change (test AND code needs to change)		
 	-find a good pattern for a repetitive test that uses random values (e.g. test executes a n different times with different random inputs)
 	-if you find a bug that you didn't test for, just add the test when you find the bug
@@ -25,6 +26,7 @@ TEST SCENARIOS TO TRY AND DEMONSTRATE
 	-different implementations of same public interface - show that any can be "plugged-in" in place of others, as long as they pass the tests
 		-show how this helps maintain clear separation
 	-mocking
+		-DEMONSTRATE: use the console/loop project to show how mocking allowed me to test that gmail interfacers without having written them.
 		-db dependency
 		-other dependency		
 		-partial mocking of a class (callbase, etc)

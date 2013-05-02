@@ -3,12 +3,16 @@ TODO
 //-finish DateParser tests
 //-write date parser code, get tests to pass
 //-have console/loop consume gmail/gcalendar interfaces before writing concrete classes
--get gmail reader working
-	-test first? no, because not sure how it will work
-	-create concrete class
-	-see what's needed to consume google api
+//-Got general outline of MailProcessor in place, created test project for Google
+//-rename mail reader, calendar writer to be more generic
 
-Got general outline of MailProcessor in place, created test project for Google
+-bleh. next step is to SIMULATE from the console, to bypass the google api crap
+
+-create concrete gmailreader/ gcal writer class	
+	-see what's needed to consume google api
+		-or possibly another email web app or other messaging system
+		google search "read gmail c sharp"
+	-create concrete class
 	
 -get gcalendar writer working
 	-test first? no, because not sure how it will work
@@ -21,6 +25,11 @@ Got general outline of MailProcessor in place, created test project for Google
 -use what you have so far to test many of the scenarios you want to test
 
 
+
+GoogleAccount
+
+messagingApplication001
+MyAppFor1
 
 
 

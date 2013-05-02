@@ -2,11 +2,20 @@
 TODO
 //-finish DateParser tests
 //-write date parser code, get tests to pass
--have console/loop consume gmail/gcalendar interfaces before writing concrete interfaces
-	-write tests first
+//-have console/loop consume gmail/gcalendar interfaces before writing concrete classes
 -get gmail reader working
-	-GetEarliestUnreadTranscript
+	-test first? no, because not sure how it will work
+	-create concrete class
+	-see what's needed to consume google api
+
+Got general outline of MailProcessor in place, created test project for Google
+	
 -get gcalendar writer working
+	-test first? no, because not sure how it will work
+	-create concrete class
+	-see what's needed to consume google api
+
+-finish console app to instantiate conrete gmailreader, transcriptparser with needed config
 -make sure to commit in working state
 -show how easy it is to reformat date format expected
 -use what you have so far to test many of the scenarios you want to test

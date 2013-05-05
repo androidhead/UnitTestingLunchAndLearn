@@ -1,8 +1,22 @@
 __________________
 PRESENTATION FLOW
--What are unit tests?
-	*-a way to test the fundamental pieces of your code to make sure they are behaving as expected
-	-less about finding bugs, more about preventing them (cite: Seth)
+
+
+//-What are unit tests?
+	Tests for fundamental pieces of your code
+	Force you to know how these pieces are forced to work
+	Foundational to TDD
+	Less about finding bugs, more about preventing them*
+	Typically autmoted using some framework	
+
+
+***********
+dale's suggestions:	
+	-TDD - make the connection of how this works to your advantage
+	-gated
+		-can it be done with gihub?
+		-can be done with team city
+************
 	
 -Why do unit tests?
 	-Saves time and money when done right
@@ -43,6 +57,8 @@ TECHNIQUES, EXAMPLES, BEST PRACTICES
 	-demonstrate ease of refactoring with unit tests	
 	-orthogonal (use different word choice) : shouldn't overlap in what functionality is tested
 		-this improves maintainability of your tests, among other things
+	-tendency to create tests in 'ad hoc' manner, but really should be treated as first class, maintainable item
+
 
 -Mocking & Dependency Injection
 	-Dependency Injection allows you to mock dependencies easily

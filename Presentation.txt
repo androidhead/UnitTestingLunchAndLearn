@@ -38,6 +38,8 @@ dale's suggestions:
 	-Helps developers communicate (tests are a kind of self-documentation)
 	
 
+-go through "Advantages" section try to demonstrate some of these things
+
 -Set up unit testing project on-the-fly to show how easy it is in VS2012
 	-have project just be a bunch of stubs in a class library
 

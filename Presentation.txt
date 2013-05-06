@@ -17,28 +17,25 @@ dale's suggestions:
 		-can it be done with gihub?
 		-can be done with team city
 ************
+
 	
--Why do unit tests?
-	-Saves time and money when done right
-		-though costs significant time at the beginning, good tests can save even more time in long run
-		-test every possible path (especially useful if there's multiple error paths, which could happen even in a simple method)
-		-helps test edge cases (which typically go untested until live)
-		-improves overall quality
-			-especially if you use Gated checkins
-		-helps design (easier to see how parts fit together if you know what each one does)				
-		-helps to maintain separation of concerns
-			-helps you think of your code as discrete, well-defined parts
-			-if something can't be unit tested, it probably should be refactored with better separation
-		-improves reliability of refactoring	
-			-essential for Agile where quick/reliable refactoring is necessary
-	-allows you solidify design in code before coding actual funcionality
-	-makes everyone more confident in their code
-	-foundational to TDD, which really saves time
-	-helps maintenance of product (write a test when you find a qa error.  then you can be certain that problem never happens again)
-	-push-pull relationship between unit tests and functionality - unit tests make sure code works, code makes sure unit tests work (they make each other "sturdy")	
-		(note: make sure there is a test to show this)
-		-in the process, this kind of self-documents code
-	-in my opinion, makes development more fun
+-Advantages
+	Time Savings
+	-a little time investment at beginning saves a lot of time in the long run
+	-helps test every possible path and edge case  (testing these are very time consuming)
+
+	Improves Quality
+	-Improves reliability of refactoring (think Agile methodology)
+	-Encourages separation of concerns
+	-Indicates design issue (if code can't be unit tested, it may benefit from a redesign)
+	-Can be used with Gated Checkins to ensure quality in shared code base.
+	-"Push-Pull relationship" makes code sturdy
+
+	Developer happiness
+	-Increases confidence
+	-Helps you to think of your code as discreet parts
+	-Assists code maintenance (e.g. write test for qa issue)
+	-Helps developers communicate (tests are a kind of self-documentation)
 	
 
 -Set up unit testing project on-the-fly to show how easy it is in VS2012
@@ -61,7 +58,7 @@ TECHNIQUES, EXAMPLES, BEST PRACTICES
 
 
 -Mocking & Dependency Injection
-	-Dependency Injection allows you to mock dependencies easily
+	-classes written with Dependency Injection allows you to mock dependencies easily
 	-MockObject.Callbase = true (mocking only part of a class) -- good for mocking methods in the same class that you are testing!
 	-using "virtual" keyword to make methods overridable for mocking VS doing it the longer way (interfaces)
 	-good way to demonstrate dependency injection

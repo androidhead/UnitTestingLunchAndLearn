@@ -2,21 +2,23 @@ __________________
 PRESENTATION FLOW
 
 
-//-What are unit tests?
-//-Advantages of Unit Testing
+P-What are unit tests?
+P-Advantages of Unit Testing
 
 Demonstration		
-	-Set up unit testing project on-the-fly to show how easy it is in VS2012
-		-have project just be a bunch of stubs in a class library
+	P-Set up unit testing project on-the-fly to show how easy it is in VS2012
 
 	-using DateParser
-		-test first (mention TDD)
+		P-test first (mention TDD)
+			-test structure
 			-demonstrate S/S/R (Subject/Scenario/ResultExpected)
 			-shouldn't overlap in what functionality is tested (helps maintainability)
+			-edge cases
 			*-there's a tendency to create tests in 'ad hoc' manner, but really should be treated as "first class", maintainable item
 				-ad-hoc is ok at first, but as you see overlapping functionality, you should abstract more		
-		-write code
+			-write implementation
 		-refactor that doesn't break any thing, keeping same functionality
+			-abstract some things out
 			-tests pass; confident that refactor didn't break anything
 		-making a change, showing tests break
 			-update tests
@@ -27,7 +29,7 @@ Demonstration
 		-refactoring, keeping same test to ensure refactor is good
 			-test may fail - that's ok, that's what its there for
 			-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
-		-edge cases
+
 
 	-Mocking & Dependency Injection: DateParser
 		-do tests first again

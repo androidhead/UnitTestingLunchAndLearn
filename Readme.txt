@@ -4,12 +4,9 @@ Description:  Discuss the purpose of unit testing, as well as some practical tec
 
 
 TODO
--finish code, get it functional
-	-get looper working
-
-
-
--finish slides
+//-finish code, get it functional
+	
+-finish presentation (see Presentation.txt)
 
 -"blog post"
 

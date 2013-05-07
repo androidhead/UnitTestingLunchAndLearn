@@ -3,96 +3,56 @@ PRESENTATION FLOW
 
 
 //-What are unit tests?
-	Tests for fundamental pieces of your code
-	Force you to know how these pieces are forced to work
-	Foundational to TDD
-	Less about finding bugs, more about preventing them*
-	Typically autmoted using some framework	
+//-Advantages of Unit Testing
 
+Demonstration		
+	-Set up unit testing project on-the-fly to show how easy it is in VS2012
+		-have project just be a bunch of stubs in a class library
 
-***********
-dale's suggestions:	
-	-TDD - make the connection of how this works to your advantage
-	-gated
-		-can it be done with gihub?
-		-can be done with team city
-************
+	-using DateParser
+		-test first (mention TDD)
+			-demonstrate S/S/R (Subject/Scenario/ResultExpected)
+			-shouldn't overlap in what functionality is tested (helps maintainability)
+			*-there's a tendency to create tests in 'ad hoc' manner, but really should be treated as "first class", maintainable item
+				-ad-hoc is ok at first, but as you see overlapping functionality, you should abstract more		
+		-write code
+		-refactor that doesn't break any thing, keeping same functionality
+			-tests pass; confident that refactor didn't break anything
+		-making a change, showing tests break
+			-update tests
+			-keeping each other "sturdy", push-pull
+			-self documentation
+		-making
+			-show changing the way I want to parse dates!							
+		-refactoring, keeping same test to ensure refactor is good
+			-test may fail - that's ok, that's what its there for
+			-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
+		-edge cases
+
+	-Mocking & Dependency Injection: DateParser
+		-do tests first again
+		-explain Interfaces vs overridable
+		-show it lend itself to Dependency Injection
+		-mocking: It.IsAny<>()
+		-encourages separation of concerns/good design (if it can't be tested, probably isn't a great design)
+		-you can/should mock your db layer so your tests don't use the database.
+
+	-Bonus
+		-find a good pattern for a repetitive test that uses random values (e.g. test executes a n different times with different random inputs)
+		-to test calculation-heavy methods: randomize input values so many scenarios get tested		
+			-maybe even [input random]/assert in a loop
 
 	
--Advantages
-	Time Savings
-	-a little time investment at beginning saves a lot of time in the long run
-	-helps test every possible path and edge case  (testing these are very time consuming)
-
-	Improves Quality
-	-Improves reliability of refactoring (think Agile methodology)
-	-Encourages separation of concerns
-	-Indicates design issue (if code can't be unit tested, it may benefit from a redesign)
-	-Can be used with Gated Checkins to ensure quality in shared code base.
-	-"Push-Pull relationship" makes code sturdy
-
-	Developer happiness
-	-Increases confidence
-	-Helps you to think of your code as discreet parts
-	-Assists code maintenance (e.g. write test for qa issue)
-	-Helps developers communicate (tests are a kind of self-documentation)
-	
-
--go through "Advantages" section try to demonstrate some of these things
-
-
-
-
-
-
-
-
-
--Set up unit testing project on-the-fly to show how easy it is in VS2012
-	-have project just be a bunch of stubs in a class library
-
--Examples of how unit tests saved me time (intermixed with best practices)
-	-
--show setting up a unit test project?
-
-____
-TECHNIQUES, EXAMPLES, BEST PRACTICES
--Best practices (cite:http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/)
-	-a unit test should usually only test one thing
-	-Naming Conventions
-		-S/S/R (Subject/Scenario/ResultExpected)
-	-demonstrate ease of refactoring with unit tests	
-	-orthogonal (use different word choice) : shouldn't overlap in what functionality is tested
-		-this improves maintainability of your tests, among other things
-	-tendency to create tests in 'ad hoc' manner, but really should be treated as first class, maintainable item
-
-
--Mocking & Dependency Injection
-	-classes written with Dependency Injection allows you to mock dependencies easily
-	-MockObject.Callbase = true (mocking only part of a class) -- good for mocking methods in the same class that you are testing!
-	-using "virtual" keyword to make methods overridable for mocking VS doing it the longer way (interfaces)
-	-good way to demonstrate dependency injection
-	-It.IsAny<>() and other such helpful "shortcuts"
-	-trick to allow subsequent calls to something return different results ("ReturnsInOrder")
-
--Test Driven Development
-Te-write simple app to demonstrate TDD, focusing on the testing part.
-	-or maybe don't write any of the working code, just write the test.		
-	-the app does a bunch of complex string parsing
-		-break the app, see the unit tests break					
--demonstrate than an un-unittestable design probably isn't a good one
--debate:  should you test private methods?
-	-I say that you SHOULD in the right case, because a private method to one design may be a public method to another.
-		-bottom line, will it save you time later?  If so, you should test that private method.
-
 
 PRESENTATION
 use reveal.js for presentation?
 	http://www.rvl.io/ is a presentation editor
 
-REFERENCES
-Steven Sanderson's blog - Writing Great Unit Tests: Best and Worst Practices
-	http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
-
 ACKNOWLEDGEMENTS
-Seth, for helping me talk thru some of the issues
+	Seth, for helping me talk thru some of the issues
+
+LINKS / REFERENCES
+	Steven Sanderson's blog - Writing Great Unit Tests: Best and Worst Practices
+		http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
+	moq (mocking framework)
+		https://code.google.com/p/moq/

@@ -6,16 +6,17 @@ Description:  Discuss the purpose of unit testing, as well as some practical tec
 TODO
 //-finish code, get it functional
 	
--finish presentation (see Presentation.txt)
+5/7-finish presentation outline (see Presentation.txt) 
 
--"blog post"
+5/8-5/9-finish code examples
+
+5/12(sunday)-finalize slideshow
+	-"blog post"
 
 
 
 
-LINKS / REFERENCES
-	http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
-
+	
 ___________
 4/29 Plan
 

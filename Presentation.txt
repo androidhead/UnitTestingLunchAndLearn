@@ -2,42 +2,37 @@ __________________
 PRESENTATION FLOW
 
 
-P-What are unit tests?
-P-Advantages of Unit Testing
+DP-What are unit tests?
+DP-Advantages of Unit Testing
 
 Demonstration		
-	P-Set up unit testing project on-the-fly to show how easy it is in VS2012
+	DP-Set up unit testing project on-the-fly to show how easy it is in VS2012
 
 	-using DateParser
-		P-test first (mention TDD)
+		DP-test first (mention TDD)
 			-test structure
 			-demonstrate S/S/R (Subject/Scenario/ResultExpected)
 			-shouldn't overlap in what functionality is tested (helps maintainability)
 			-edge cases
 			*-there's a tendency to create tests in 'ad hoc' manner, but really should be treated as "first class", maintainable item
 				-ad-hoc is ok at first, but as you see overlapping functionality, you should abstract more		
-			-write implementation
-		-refactor that doesn't break any thing, keeping same functionality
+			-write implementation that breaks at first, finish
+		DP-refactor that doesn't break any thing, keeping same functionality
 			-abstract some things out
 			-tests pass; confident that refactor didn't break anything
-		-making a change, showing tests break
+		>>P-making a change, showing tests break
+			-show changing the way I want to parse dates
 			-update tests
 			-keeping each other "sturdy", push-pull
-			-self documentation
-		-making
-			-show changing the way I want to parse dates!							
-		-refactoring, keeping same test to ensure refactor is good
-			-test may fail - that's ok, that's what its there for
-			-e.g. may want to add new date formats that can be parsed.  write the tests first, see'em fail, and then fix the code.
+			-self documentation			
 
-
-	-Mocking & Dependency Injection: DateParser
-		-do tests first again
-		-explain Interfaces vs overridable
+	P-Mocking & Dependency Injection: TranscriptParser
+		-Mocking dependencies important to testing individual units
 		-show it lend itself to Dependency Injection
 		-mocking: It.IsAny<>()
 		-encourages separation of concerns/good design (if it can't be tested, probably isn't a great design)
 		-you can/should mock your db layer so your tests don't use the database.
+		-ideally, no configuration in test projects (increases maintainability)
 
 	-Bonus
 		-find a good pattern for a repetitive test that uses random values (e.g. test executes a n different times with different random inputs)

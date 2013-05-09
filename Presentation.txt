@@ -40,6 +40,13 @@ Demonstration
 			-maybe even [input random]/assert in a loop
 
 	
+	
+	-first slide
+		-what's the pixel size of the slide?
+			-can we change it for the presentation?
+				-if so, make it 1080 (or whatever resolotion of conference room tv is)
+			-then adjust LA slide to match
+	
 
 PRESENTATION
 use reveal.js for presentation?
@@ -52,4 +59,4 @@ LINKS / REFERENCES
 	Steven Sanderson's blog - Writing Great Unit Tests: Best and Worst Practices
 		http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
 	moq (mocking framework)
-		https://code.google.com/p/moq/
+		https://github.com/Moq

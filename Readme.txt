@@ -6,9 +6,9 @@ Description:  Discuss the purpose of unit testing, as well as some practical tec
 TODO
 //-finish code, get it functional
 	
-5/7-finish presentation outline (see Presentation.txt) 
+//-finish presentation outline (see Presentation.txt) 
 
-5/8-5/9-finish code examples
+-finish code examples
 
 5/12(sunday)-finalize slideshow
 	-"blog post"

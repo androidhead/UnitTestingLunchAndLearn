@@ -25,6 +25,7 @@ Demonstration
 			-update tests
 			-keeping each other "sturdy", push-pull
 			-self documentation			
+			-see "todo: ...purposeful mistake" for accidental mistakes
 
 	P-Mocking & Dependency Injection: TranscriptParser
 		-Mocking dependencies important to testing individual units

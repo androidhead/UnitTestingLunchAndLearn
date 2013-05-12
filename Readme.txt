@@ -8,14 +8,21 @@ TODO
 	
 //-finish presentation outline (see Presentation.txt) 
 
--finish code examples
+//-finish code examples
 
-5/12(sunday)-finalize slideshow
+//-cover sheet 
+	//-get looking decent
+	//-get LA pic in 9 x 16 dimensions 
+		-leave margin for text
+	//-put all text
+
+
+//5/12(sunday)-finalize slideshow
 	-"blog post"
 
 
 
-
+9/16  1080/1920
 	
 ___________
 4/29 Plan

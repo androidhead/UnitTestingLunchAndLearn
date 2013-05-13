@@ -8,6 +8,15 @@
 
 </section>
         <section>
+            <h2>Title</h2>
+        </section>
+        <section>
+            <h2>Title</h2>
+        </section>
+        <section>
+            <h2>Title</h2>
+        </section>
+        <section>
             <h2>WHAT ARE UNIT TESTS?</h2>
 <div>
             <ul>
@@ -25,7 +34,7 @@
 <p>
         </p>
 <ul>
-<li>A little time investment at beginning saves a lot of time in the long run (and even in the short run)</li>
+<li>A little time investment at beginning saves a lot of time in the long run (and even in the short run) (add: some facts)</li>
 <li>
         <span>Helps test every possible path and edge case &nbsp;(testing these are normally very time consuming)</span>
     </li>
@@ -40,9 +49,9 @@
 <li>Improves reliability of refactoring (think Agile methodology)</li>
 <li>Encourages separation of concerns</li>
 <li>Indicates design issue (if code can't be unit tested, it may benefit from a redesign)</li>
-<li>Can be used with Gated Checkins to ensure quality in shared code base (think TFS (+git?), Team City, etc).</li>
+<li>Can disallow check-ins/commits when tests don't pass</li>
 <li>
-<span style="font-size: 35.70945358276367px; font-style: normal; font-variant: normal;">"Push-Pull relationship" makes code sturdy</span>
+<span style="font-size: 35.70945358276367px; font-style: normal; font-variant: normal;">"Push-Pull relationship" makes code sturdy (Add: explain this better or remove)</span>
     <br>
 </li>
 </ul>
@@ -79,18 +88,16 @@
         <h2>TESTING BASICS</h2>
 <div>
         <ul>
-<li>Test first</li>
+<li>Test first (add: fix smartstupid vs stupidsmart)(add: ctrl+m+p/o) (add:test on fly)</li>
 <li>Structure of a test</li>
 <li>SSR naming convention</li>
-<li>Avoid overlapping tests</li>
 <li>Test edge cases</li>
-<li>Abstract (to what extent?)</li>
 </ul>
     </div>
 </section>
 <section>
     <h2>EASE REFACTORING</h2>
-<div>Abstract your implementation and see that your tests still pass.</div>
+<div>Modify your implementation and see that your tests still pass.</div>
 <div>
     <br>
 </div>
@@ -103,7 +110,7 @@
 <div>
     <div style="font-size: 35.70945358276367px; font-style: normal; font-variant: normal;">
         <ul>
-<li>Example: change date formats</li>
+<li>Example: add date format</li>
 <li>Update tests accordingly</li>
 <li>Keep tests / implementation in sync</li>
 <li>Makes codebase "sturdy"</li>
@@ -121,7 +128,7 @@
 <li>Mocking lends itself to technique of DI</li>
 <li>Example of mocking</li>
 <li>DI also encourages separation of concerns</li>
-<li>Should mock db layer (data-independence)</li>
+<li>Should mock db layer, external resources, etc (data-independence)&nbsp;</li>
 <li>Good practice: no configuration in tests projects (improves maintainability and separation)</li>
 </ul>
 </div>

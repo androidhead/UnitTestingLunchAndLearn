@@ -7,6 +7,7 @@ TODO
 //-work on cover sheet
 //-get rid of accidental slides
 //-backup slideshow
-
+-look for "sturdy" comment from Seth
+-statistic about saving time
 
 

@@ -6,8 +6,7 @@ Description:  Discuss the purpose of unit testing, as well as some practical tec
 TODO
 //-work on cover sheet
 //-get rid of accidental slides
--backup slideshow
--see notes on slides
--"repackage" updates to code (see github "pending changes" for what has changed)
+//-backup slideshow
+
 
 

@@ -8,6 +8,7 @@ TODO
 
 -bleh. next step is to SIMULATE from the console, to bypass the google api crap
 
+
 -create concrete gmailreader/ gcal writer class	
 	-see what's needed to consume google api
 		-or possibly another email web app or other messaging system
